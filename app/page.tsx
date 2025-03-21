@@ -50,22 +50,23 @@ export default function Home() {
       }
 
       // 使用代理服务获取图片
-      const response = await fetch('/api/proxy-image', {
-        method: 'POST',
+      const response = await fetch(validImageUrl, {
         headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ url: validImageUrl }),
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        }
       });
 
       if (!response.ok) {
-        const error = await response.json();
-        throw new Error(error.error || 'Failed to fetch image');
+        throw new Error('Failed to fetch image');
       }
       
       const blob = await response.blob();
-      const imageUrl = URL.createObjectURL(blob);
-      setSelectedImage(imageUrl);
+      if (!blob.type.startsWith('image/')) {
+        throw new Error('The URL does not point to a valid image');
+      }
+
+      const processedImageUrl = URL.createObjectURL(blob);
+      setSelectedImage(processedImageUrl);
       setInvertedImage(null);
     } catch (error) {
       console.error('Error loading image URL:', error);
