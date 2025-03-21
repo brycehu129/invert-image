@@ -8,6 +8,14 @@ const nextConfig = {
     unoptimized: true,
     domains: ['i.pinimg.com', 'pinterest.com'],
   },
+  rewrites: async () => {
+    return [
+      {
+        source: '/sitemap.xml',
+        destination: '/api/sitemap.xml',
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
