@@ -7,14 +7,16 @@ const nextConfig = {
   images: {
     unoptimized: true,
     domains: ['i.pinimg.com', 'pinterest.com'],
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'i.pinimg.com',
-        pathname: '/**',
-      },
-    ],
-  }
+  },
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      require('fs').copyFileSync(
+        './public/sitemap.xml',
+        './.next/sitemap.xml'
+      );
+    }
+    return config;
+  },
 };
 
 module.exports = nextConfig;
