@@ -1,0 +1,61 @@
+For all designs I ask you to make, have them be beautiful, not cookie cutter. Make webpages that are fully featured and worthy for production.
+
+When using client-side hooks (useState and useEffect) in a component that's being treated as a Server Component by Next.js, always add the "use client" directive at the top of the file.
+
+Do not write code that will trigger this error: "Warning: Extra attributes from the server: %s%s""class,style"
+
+By default, this template supports JSX syntax with Tailwind CSS classes, the shadcn/ui library, React hooks, and Lucide React for icons. Do not install other packages for UI themes, icons, etc unless absolutely necessary or I request them.
+
+Use icons from lucide-react for logos.
+
+Use stock photos from unsplash where appropriate, only valid URLs you know exist.
+
+<div class="content-container">
+    <header class="page-header">
+        <h1 class="title">Free Online Image Inverter</h1>
+    </header>
+
+    <div class="description">
+        <p>Image inversion is a powerful photo editing technique that reverses the colors of an image, creating a negative effect. This process transforms light areas to dark and dark areas to light, while maintaining the overall structure and detail of the original image.</p>
+    </div>
+
+    <section class="features">
+        <h2>Common Uses for Inverted Images</h2>
+        <ul class="features-list">
+            <li>Creating artistic effects and unique visual styles</li>
+            <li>Enhancing visibility of details in scientific and medical imaging</li>
+            <li>Developing film negatives into digital positives</li>
+            <li>Generating creative social media content</li>
+            <li>Improving accessibility for visually impaired users</li>
+        </ul>
+    </section>
+
+    <section class="steps">
+        <h3>How to Invert an Image Online</h3>
+        <ol>
+            <li>Upload your image using our drag-and-drop interface or paste image URL</li>
+            <li>Wait a few seconds for automatic processing</li>
+            <li>Download your inverted image in high quality</li>
+        </ol>
+    </section>
+
+    <section class="benefits">
+        <h2>Benefits of Using Our Image Inverter</h2>
+        <p>Our online image inverter tool offers a seamless experience with instant results. Unlike complex photo editing software, our tool is designed to be simple yet powerful. Process multiple images quickly, maintain original quality, and never worry about watermarks or hidden fees.</p>
+    </section>
+
+    <div class="upload-container">
+        <!-- 拖拽上传区域 -->
+        <div class="drag-drop-area">
+            <p>拖拽图片到这里或点击上传</p>
+            <input type="file" accept="image/*" class="file-input">
+        </div>
+        
+        <!-- 添加URL输入区域 -->
+        <div class="url-input-area">
+            <p>或者输入图片URL</p>
+            <input type="text" placeholder="https://example.com/image.jpg" class="url-input">
+            <button class="url-submit">确认</button>
+        </div>
+    </div>
+</div>
