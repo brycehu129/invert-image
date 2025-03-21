@@ -5,7 +5,15 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    unoptimized: true
+    unoptimized: true,
+    domains: ['i.pinimg.com', 'pinterest.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'i.pinimg.com',
+        pathname: '/**',
+      },
+    ],
   }
 };
 

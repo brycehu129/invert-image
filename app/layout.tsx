@@ -1,18 +1,27 @@
 import './globals.css';
-import type { Metadata } from 'next';
+import { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Free Online Image Inverter | Invert Images Instantly - InvertImage.net',
-  description: 'Free online tool to invert image colors. Create negative effects, enhance photos, and transform images instantly. No registration required. Support for JPG, PNG, WebP.',
-  keywords: 'invert image, image inverter, photo negative, color inversion, image editing tool, online image inverter, free image tool',
+  title: 'Free Online Image Inverter - Professional Image Color Inversion Tool',
+  description: 'Instantly invert your images with our professional-grade tool. Free, no registration required, supports all common image formats with high quality results.',
+  keywords: 'image inverter, photo negative, color inversion, image editing tool, online image tool',
+  robots: 'index, follow',
   openGraph: {
-    title: 'Free Online Image Inverter | InvertImage.net',
-    description: 'Transform your images with our free online image inverter. Create stunning negative effects instantly.',
+    title: 'Free Online Image Inverter',
+    description: 'Professional image color inversion tool - free and instant processing',
     type: 'website',
-    url: 'https://invertimage.net',
+    url: 'https://image-inverter.net',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Image Inverter Tool Preview',
+      }
+    ],
   },
 };
 
