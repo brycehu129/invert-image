@@ -8,13 +8,6 @@ import { AspectRatio } from '@/components/ui/aspect-ratio';
 import StructuredData from './components/StructuredData';
 import Features from './components/Features';
 import { invertImage } from './utils/imageProcessing';
-import { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  alternates: {
-    canonical: 'https://invertimage.net'
-  }
-}
 
 export default function Home() {
   const [isDragging, setIsDragging] = useState(false);
