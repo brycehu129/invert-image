@@ -8,13 +8,13 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Invert Image Online | Free Image Color Inverter Tool',
   description: 'Free online tool to invert image colors. Easy to use image inverter - upload, invert, and download. Support PNG, JPG, JPEG formats. No registration required.',
-  keywords: 'image inverter, photo negative, color inversion, image editing tool, online image tool',
+  keywords: 'invert image, image inverter, invert image online, image inversion, photo inverter, color inversion',
   robots: 'index, follow',
   openGraph: {
     title: 'Free Online Image Inverter',
     description: 'Professional image color inversion tool - free and instant processing',
     type: 'website',
-    url: 'https://image-inverter.net',
+    url: 'https://invertimage.net',
     images: [
       {
         url: '/og-image.png',
@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="description" content="Free online tool to invert image colors. Easy to use image inverter - upload, invert, and download. Support PNG, JPG, JPEG formats. No registration required." />
+        <link rel="canonical" href="https://invertimage.net" />
       </head>
       <body className={inter.className}>
         <GoogleAnalytics />
