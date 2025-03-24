@@ -1,4 +1,13 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://invertimage.net/sitemap.xml 
+# 指定主站点地图
+Sitemap: https://invertimage.net/sitemap.xml
+
+# 建议添加一些常见的爬虫规则
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*.xml$
+Allow: /sitemap.xml
