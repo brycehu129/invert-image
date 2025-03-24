@@ -18,36 +18,4 @@
             hreflang="zh"
             href="https://invertimage.net"/>
     </url>
-
-    <!-- 功能页面 -->
-    <url>
-        <loc>https://invertimage.net/invert</loc>
-        <lastmod>2024-03-22</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-        <xhtml:link 
-            rel="alternate"
-            hreflang="en"
-            href="https://invertimage.net/invert"/>
-        <xhtml:link 
-            rel="alternate"
-            hreflang="zh"
-            href="https://invertimage.net/invert"/>
-    </url>
-
-    <!-- 关于页面 -->
-    <url>
-        <loc>https://invertimage.net/about</loc>
-        <lastmod>2024-03-22</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link 
-            rel="alternate"
-            hreflang="en"
-            href="https://invertimage.net/about"/>
-        <xhtml:link 
-            rel="alternate"
-            hreflang="zh"
-            href="https://invertimage.net/about"/>
-    </url>
 </urlset> 

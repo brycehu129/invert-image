@@ -8,6 +8,13 @@ import { AspectRatio } from '@/components/ui/aspect-ratio';
 import StructuredData from './components/StructuredData';
 import Features from './components/Features';
 import { invertImage } from './utils/imageProcessing';
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: 'https://invertimage.net'
+  }
+}
 
 export default function Home() {
   const [isDragging, setIsDragging] = useState(false);
@@ -119,7 +126,7 @@ export default function Home() {
         <section aria-labelledby="hero-heading" className="w-full py-20">
           <div className="container mx-auto px-4 max-w-4xl">
             <h1 id="hero-heading" className="text-4xl md:text-6xl font-bold text-center mb-6">
-              Free Online Image Inverter
+              Invert Image Online
             </h1>
             <p className="text-xl text-center text-muted-foreground mb-8">
               Professional image color inversion tool - Instantly create negative effects
